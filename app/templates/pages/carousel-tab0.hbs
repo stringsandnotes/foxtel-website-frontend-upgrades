@@ -1,0 +1,130 @@
+---
+layout: empty.hbs
+---
+
+          <div class="carousel-inner-top-border visible-sm*">
+            <div class="carousel-gradient-border"></div>
+          </div>
+          <div class="container">
+            <div class="row">            
+              <div class="col-xs-12 col-sm-4">
+                <!-- Package left pane -->
+                <div class="package-left">                      
+                  <div class="package-left__header"><p>Your TV package includes...</p></div>
+                  <!-- Mobile Nav -->
+                  <div class="panel-group visible-xs" id="bb-package-nav-mobile" role="tablist" aria-multiselectable="true"></div>
+
+                  <!-- Desktop Nav -->
+                  <ul class="nav nav-tabs hidden-xs visible-sm*" id="bb-package-nav-desktop" role="tablist">
+                    <li role="presentation">
+                      <a href="#pack-tab1" aria-controls="pack-tab1" role="tab" data-toggle="tab" id="package-1">
+                        <div class="package-thumb">
+                          <img src="etc/designs/foxtel/clientlibs/img/pkg-icons/icon-entertainment-lg.png" alt="">
+                        </div>
+                        <div class="package-desc">
+                          <p class="title">Entertainment pack</p>                              
+                          <small>45 channels of brilliant TV</small>  
+                        </div>
+                      </a>
+                    </li>
+                    <li role="presentation"><a href="#pack-tab2" aria-controls="pack-tab2" role="tab" data-toggle="tab">
+                        <div class="package-thumb">
+                          <img src="https://www.foxtel.com.au/content/dam/foxtel/get/broadband/btn-iq2.png" alt="">
+                        </div>
+                        <div class="package-desc">
+                          <p class="title">Foxtel iQ2</p>                              
+                          <small>Set top box &amp; remote</small>  
+                        </div>
+                    </a></li>
+                    <li role="presentation">
+                      <a href="#pack-tab3" aria-controls="pack-tab3" role="tab" data-toggle="tab">
+                        <div class="package-thumb">
+                          <img src="https://www.foxtel.com.au/etc/designs/foxtel/clientlibs1/img/btn-go.png" alt="">
+                        </div>
+                        <div class="package-desc">
+                          <p class="title">Foxtel Go</p>                              
+                          <small>Watch Foxtel on your phone, tablet or PC</small>  
+                        </div>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#pack-tab4" aria-controlse="pack-tab4" role="tab" data-toggle="tab">
+                        <div class="package-thumb">
+                          <img src="https://www.foxtel.com.au/etc/designs/foxtel/clientlibs1/img/btn-anytime.png" alt="">
+                        </div>
+                        <div class="package-desc">
+                          <p class="title">Foxtel Anytime</p>                              
+                          <small>Never miss your favourite shows</small>  
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="package-left__header"><p>Want more?</p></div>
+                  <div class="text-center package-want-more-box">
+                    <img src="https://www.foxtel.com.au/etc/designs/foxtel/clientlibs1/img/combo_discover_platinum-hd.png" alt="">
+                    <p>On the next step you can add TV channel packs including Sports, Movies, drama & more</p>
+                  </div>  
+                </div> <!-- / package left pane -->                    
+              </div> <!-- / col 4 -->
+              <div class="col-xs-12 col-sm-8">
+                <!-- Tab panes -->
+                <div class="tab-content package-right hidden-xs visible-sm*">
+                  <div role="tabpanel" class="tab-pane active" id="pack-tab1"></div>
+                  <div role="tabpanel" class="tab-pane fade" id="pack-tab2"></div>
+                  <div role="tabpanel" class="tab-pane fade" id="pack-tab3"></div>
+                  <div role="tabpanel" class="tab-pane fade" id="pack-tab4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+     
+     $('#package-1').tab('show');
+     LoadPackageContent('#pack-tab1');
+
+    // LOAD EXTERNAL CONTENT 
+    // =====================
+    function LoadPackageContent(target){
+      var selectorName = target;
+      selectorName = selectorName.replace('#', '');
+      selectorName = selectorName.replace(/\"/g, '');
+      selectorName = selectorName + '.html';
+      console.log(selectorName);
+      $.ajax({url: selectorName, success: function(result){
+          $(target).html(result);
+      }});
+    }
+    //This function duplicates the desktop tab to collapse for mobile view
+    function getTabLinks(elem) {
+      for ( var i = 0; i < elem.length; i++ ) {
+        var elemVal = elem[ i ].innerHTML;
+        var j = i + 1;
+        var linkID = '<div class="panel panel-default"><div class="panel-heading" role="tab" id="heading'+j+'"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#pack-collapse'+j+'" aria-expanded="false" aria-controls="collapse'+j+'">';
+        var collapsableContainer = '<div id="pack-collapse'+j+'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading'+j+'">test.</div>';
+        
+        $('#bb-package-nav-mobile').append(linkID + elemVal + '</a></div><div class="panel-body">' + collapsableContainer + '</div></div>');
+      }
+    }
+    var tabLinks = getTabLinks($('#bb-package-nav-desktop li a'));
+
+
+    function Plugin(option) {
+      return this.each(function () {
+        var $this = $(this)
+      })
+    }
+
+    var BBDetailsTabHandler = function (e) {
+      e.preventDefault();
+      Plugin.call($(this));
+      LoadPackageContent($(this).context.hash);
+    }
+   
+    $(document)
+      .on('click.bs.tab.data-api', '[data-toggle="tab"]', BBDetailsTabHandler)
+      .on('click.bs.tab.data-api', '[data-toggle="pill"]', BBDetailsTabHandler) 
+  });
+</script>

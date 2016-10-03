@@ -1,0 +1,236 @@
+---
+layout: empty.hbs
+---
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Foxtel Broadband Bundles - redesign</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				font: 14px Helvetica, Arial, sans-serif;
+			}
+			a {
+				color: #333;
+				text-decoration: none;
+			}
+			a:hover {
+				color: #000;
+				text-decoration: underline;
+			}
+			.container {
+				margin: 0 auto;
+				padding: 20px 50px;
+				width: 800px;
+				border: 1px solid #eee;
+				border-top: none;
+				background: #f9f9f9;
+			}
+            .wrapper {
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: #eee;
+                border-radius: 5px;
+            }
+            h1 {
+                margin: 0 0 10px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            p:not(:last-child) {
+                margin-bottom: 10px;
+            }
+			ul {
+				margin: 0;
+				padding: 0 0 0 20px;
+				list-style: none;
+				font-size: 14px;
+			}
+			ul li {
+				margin: 0;
+				padding: 3px 0;
+			}
+			ul > li > a,
+			ul > li > strong {
+				display: inline-block;
+				margin-bottom: 5px;
+				color: #333;
+				font-weight: bold;
+			}
+			ul li ul li > a {
+				font-weight: normal;
+			}
+			ul li a.done {
+				color: green;
+			}
+			span.reuse,
+			li.reuse a {
+				
+			}
+			li.reuse a:after {
+				content: 'Reuse from current version';
+				background-color: purple;
+			}
+			span.outofscope,
+			li.reuse a {
+				
+			}
+			li.outofscope a:after {
+				content: 'Reuse from current version';
+				background-color: purple;
+			}
+			span.impl,
+			li.impl a:after {
+				position: relative;
+				display: inline-block;
+				top: -2px;
+				padding: 3px 5px;
+				font-size: 10px;
+				color: #fff;
+                border-radius: 3px;
+			}
+			li.impl a:after {
+				margin-left: 5px;
+				top: 0;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+			span.no,
+			li.impl.no > a:after {
+				content: "Not Implemented";
+				background: #ec3737;
+			}
+			span.yes,
+			li.impl.yes > a:after {
+				content: "Implemented";
+				background: #6bbe39;
+			}
+			span.inprogress,
+			li.impl.inprogress > a:after {
+				content: "In Progress";
+				background: orange;
+			}
+			span.reuse,
+			li.impl.reuse > a:after {
+				content: "Reuse from current version";
+				background: purple;
+			}
+			span.outofscope,
+			li.impl.outofscope > a:after {
+				content: "Out of scope for February";
+				background: gray;
+			}
+			.footer {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="container">
+			<div class="wrapper">
+				<h1>Foxtel Broadband Bundles - redesign</h1>
+				<p class="lead"><strong>Version:</strong> 0.0.x</p>
+				<p>Reference colour relates to the stage of development:</p>
+				<p><span class="impl no">NOT IMPLEMENTED</span> <span class="impl yes">IMPLEMENTED</span> <span class="impl inprogress">IN PROGRESS</span> <span class="impl reuse">REUSE FROM CURRENT VERSION</span> <span class="impl outofscope">OUT OF SCOPE FOR MAY</span>
+				</p>
+			</div>
+			<ul>				
+				<li>
+					<strong>[1] GET Broadband bundles</strong>
+					<ul>
+						<li class="impl"><a href="1-1-get-broadband-bundles-landing.html">1-1 Landing page</a></li>
+						<li class="impl"><a href="1-2-get-broadband-bundles-detail.html">1-2 Detail page</a></li>
+						<li class="impl"><a href="1-3-get-broadband-bundles-landing-two-items-carousel.html">1-3 Two items carousel</a></li>
+						<li class="impl"><a href="1-4-get-broadband-bundles-landing-four-items-carousel.html">1-4 Four items carousel</a></li>
+						<li class="impl"><a href="1-5-get-broadband-bundles-landing-two-price-bundles.html">1-5 Two price bundles</a></li>
+					</ul>
+				</li>
+			</ul>	
+
+			<ul>				
+				<li>
+					<strong>[2] GOT Broadband bundles</strong>
+					<ul>
+						<li class="impl"><a href="2-1-got-broadband-bundles-landing.html">2-1 Landing page</a></li>
+						<li class="impl"><a href="2-2-got-broadband-bundles-detail.html">2-2 Detail page</a></li>
+						<li class="impl"><a href="2-3-got-broadband-bundles-detail-unlimited.html">2-3 Detail page UNLIMITED 
+						<li class="impl"><a href="2-4-got-broadband-bundles-detail-platinum.html">2-4 Detail page UNLIMITED BROADBAND +  PLATINUM HD</a></li>
+						<li class="impl inprogress"><a href="2-5-got-broadband-bundles-detail-four-column-carousel.html">2-5 Detail page four column carousel</a></li>
+					</ul>
+				</li>
+			</ul>	
+
+
+			<ul>				
+				<li>
+					<strong>Two click upgrade</strong>
+					<ul>
+						<li class="impl"><a href="two-click-upgrade.html">Two click upgrade homepage</a></li>
+						<li class="impl"><a href="two-click-upgrade-confirmation.html">Two click upgrade confirmation</a></li>
+						<li class="impl"><a href="two-click-upgrade-error.html">Two click upgrade error page</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>				
+				<li>
+					<strong>Skip links</strong>
+					<ul>
+						<li class="impl"><a href="skip-links.html">Skip links</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>				
+				<li>
+					<strong>Pay my bill</strong>
+					<ul>
+						<li class="impl"><a href="paymybill.html">Pay my bill</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>				
+				<li>
+					<strong>Foxtel ID</strong>
+					<ul>
+						<li class="impl"><a href="foxtel-id-registration-page.html">Registration page</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>				
+				<li>
+					<strong>NBN</strong>
+					<ul>
+						<li class="impl"><a href="nbnheader.html">NBN Header</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>				
+				<li>
+					<strong>Foxtel Play</strong>
+					<ul>
+						<li class="impl"><a href="foxtel-play-manage-my-package.html">Manage my package</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="footer">
+				<p>&copy; 2016 Foxtel Pty Ltd</p>
+			</div>
+		</div>
+	</body>
+</html>

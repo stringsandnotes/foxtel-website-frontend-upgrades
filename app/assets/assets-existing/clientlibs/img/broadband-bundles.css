@@ -1,0 +1,358 @@
+/* change height of blue sky background in header */
+.image-cinematic {
+    height: 135%;
+}
+
+/* add orange arrow to menu */
+.list-arrow li {
+     list-style-image: url("dam/right-arrow.png");
+     margin-bottom: 8px;
+     padding-left: 5px;
+}
+.menu-group .sub-navigation {
+    background: url("dam/bgd-black-overlay.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    display: block;
+    padding-top: 1em;
+}
+.main-title {
+    border-bottom: 1px solid #e7e7e7;
+    overflow: hidden;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.bundle-box-top {
+  background-image: linear-gradient(to bottom, #e9e7e7 0%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(top, #e9e7e7 0%, #ffffff 100%);
+  background-image: -o-linear-gradient(top, #e9e7e7 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e7e7', endColorstr='#ffffff', GradientType=0); BACKGROUND-REPEAT: repeat-x;
+  background-repeat: repeat-x;
+  vertical-align: top;
+}
+
+.bundle-box-bottom-orange {
+  background-image: linear-gradient(to bottom, #ed6e24 0%, #d20a2f 100%); 
+  background-image: -webkit-linear-gradient(top, #ed6e24 0%, #d20a2f 100%);
+  background-image: -o-linear-gradient(top, #ed6e24 0%, #d20a2f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed6e24', endColorstr='#d20a2f', GradientType=0); BACKGROUND-REPEAT: repeat-x;
+  background-repeat: repeat-x;
+  vertical-align: top;
+  padding: 0 20px 20px;
+}
+
+.bundle-box-bottom-pink {
+  background-image: linear-gradient(to bottom, #e92c86 0%, #690059 100%); 
+  background-image: -webkit-linear-gradient(top, #e92c86 0%, #690059 100%);
+  background-image: -o-linear-gradient(top, #e92c86 0%, #690059 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e92c86', endColorstr='#690059', GradientType=0); BACKGROUND-REPEAT: repeat-x;
+  background-repeat: repeat-x;
+  vertical-align: top;
+  padding: 0 20px 20px;
+}
+
+.bundle-box-bottom-purple {
+  background-image: linear-gradient(to bottom, #bf38dd 0%, #2d0067 100%); 
+  background-image: -webkit-linear-gradient(top, #bf38dd 0%, #2d0067 100%);
+  background-image: -o-linear-gradient(top, #bf38dd 0%, #2d0067 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf38dd', endColorstr='#2d0067', GradientType=0); BACKGROUND-REPEAT: repeat-x;
+  background-repeat: repeat-x;
+  vertical-align: top;
+  padding: 0 20px 20px;
+}
+
+.bundle-box-bottom-blue {
+  background-image: linear-gradient(to bottom, #3573c8 0%, #01008c 100%); 
+  background-image: -webkit-linear-gradient(top, #3573c8 0%, #01008c 100%);
+  background-image: -o-linear-gradient(top, #3573c8 0%, #01008c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3573c8', endColorstr='#01008c', GradientType=0); BACKGROUND-REPEAT: repeat-x;
+  background-repeat: repeat-x;
+  vertical-align: top;
+  padding: 0 20px 20px;
+}
+
+.bundle-title {
+  text-align: center;
+  vertical-align: text-bottom;
+  font: 4em "ProximaNova-Thin", arial, sans-serif;
+  padding-top: 10px;
+}
+
+.bundle-price {
+  text-align: center;
+  vertical-align: text-bottom;
+  font: 4em "ProximaNova-Thin", arial, sans-serif;
+  border-bottom: 1px solid #dddddd;
+  text-indent: -22px;
+  padding-top: 10px;
+  padding-left: 22px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.bundle-price p {
+  margin: 0px;
+}
+
+.option-list {
+  margin: 0;
+  color: black;
+  padding: 0 20px 20px;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-repeat: none;
+  filter: none;
+}
+.option-list dt {
+  border-top: 1px dashed #8f909b;
+  /* font: 1.125em/1.2 "ProximaNova-semibold", arial, sans-serif; */
+  overflow: hidden;
+  text-indent: -35px;
+  padding-top: 10px;
+  padding-left: 35px;
+}
+.option-list dt:first-child {
+  border-top: none;
+  padding-top: 0px;
+}
+.option-list dt .wi-icon {
+  margin-right: 7px;
+}
+.option-list dd {
+  /*line-height: 1.286;*/
+  /*font-size: 0.875em;*/
+  margin: 0;
+  padding: 0 0 10px 35px;
+}
+
+/*
+.bundle-cta {
+  text-align: center;
+  margin-top: 15px;
+  background-image: linear-gradient(to bottom, #e9e7e7 0%, #d9d9d9 50%); 
+  background-repeat: repeat-x;
+  width: 90%;
+  height: 50px;
+  display: table;
+  table-align: center;
+}
+*/
+
+
+
+.bundle-cta {
+  margin-top: 15px;
+  width: 90%;
+}
+
+.button-cta .btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 0.9em;
+  /* padding: 0.6em 1.8em */
+}
+
+.button-cta .btn a {
+  text-decoration: none;
+}
+
+.button-cta .bullet-arrow-item {
+  padding-left: 8px;
+}
+
+.button-cta .snippet .bullet-arrow-item, .button-cta .wysiwyg .bullet-arrow-item {
+  padding-left: 8px;
+}
+
+.broadband-icon {
+  background: url(dam/icon-broadband.png) no-repeat center left;
+  padding-left: 35px;
+  height: 30px;
+  width: 30px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.phone-icon {
+  background: url(dam/icon-phone.png) no-repeat center left;
+  padding-left: 35px;
+  height: 30px;
+  width: 30px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.tv-icon {
+  background: url(dam/icon-tv.png) no-repeat center left;
+  padding-left: 35px;
+  height: 30px;
+  width: 30px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1100px) {
+
+  .button-cta .btn {
+    font-size: 0.7em;
+    padding: 0.7em 1.3em
+  }
+
+  .bundle-price {
+    font: 3em "ProximaNova-Thin", arial, sans-serif;
+  }
+
+  .bundle-title {
+    font: 3em "ProximaNova-Thin", arial, sans-serif;
+  }
+
+  .broadband-icon {
+    height: 20px;
+    width: 20px;
+    background-size: 20px 20px;
+  }
+
+  .phone-icon {
+    height: 20px;
+    width: 20px;
+    background-size: 20px 20px;
+  }
+
+  .tv-icon {
+    height: 20px;
+    width: 20px;
+    background-size: 20px 20px;
+  }
+
+  .bundle-box-top {
+    min-height: 280px;
+}
+
+}
+
+
+  .wysiwyg a.bundle-box{text-decoration:none;}
+
+
+
+
+/* Accordion Styles */
+
+    .accordion {
+    display: block;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding-bottom: 30px;
+    }
+  a.accordion{
+    text-decoration:none;
+  }
+    .accordion .thumb {
+      height: 155px;
+      line-height: 155px;
+    }
+    .accordion .title-package {
+      color:#d44513;
+      margin-bottom: 5px;
+    }
+  .active .title-package{
+    color:#444;
+  }
+    .accordion .title-package span {
+      display: inline-block;
+      padding: 0 5px;
+    }
+    .accordion .title-package span:after{
+      background: url(/etc/designs/foxtel/clientlibs/img/arrow-title-hide-show.gif) no-repeat right bottom;
+      content: ' ';
+      display: inline-block;
+      margin: 5px 0 0 10px;
+      height: 9px;
+      vertical-align: top;
+      width: 16px;
+    }
+    .accordion .sub-title-package {
+      color: #7b7b85;
+      font-size: 1em;
+      line-height: 1.2;
+    }
+    .accordion.plus:before {
+      margin-bottom: 20px;
+      bottom: -10px;
+      left: 50px;
+      color: #7b7b85;
+      content: url(/etc/designs/foxtel/clientlibs1/img/icon-plus.png);
+      position: absolute;
+    }
+    .accordion.active {
+      color: black;
+    }
+    .accordion.active .title-package span:after{
+      background: url(/etc/designs/foxtel/clientlibs/img/arrow-title-hide-show.gif) no-repeat right top
+    }
+    @media (min-width: 480px) {
+      .accordion {
+      padding-bottom: 60px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .accordion .sub-title-package {
+      font-size: 2em;
+    }
+    .accordion .title-package {
+      font-size: 2.75em;
+    }
+    .accordion.plus:before {
+      bottom: -10px;
+      content: url(/etc/designs/foxtel/clientlibs1/img/icon-plus-640.png);
+      left: 75px;
+    }
+    
+    }
+    @media (min-width: 768px) {
+      .accordion {
+      padding-bottom: 0;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .accordion .desc {
+      margin: 0 auto;
+      max-width: 230px;
+    }
+    .accordion .title-package {
+      font-size: 1.2em;
+    }
+    .accordion .vertical-divider{
+                border-right:1px solid #dedede;
+    }
+    .accordion .sub-title-package {
+      font-size: 0.9em;
+    }
+  .accordion.active:after {
+      background: url(/etc/designs/foxtel/clientlibs1/img/icon-package-active.png);
+      bottom: -6px;
+      content: "";
+      display: block;
+      height: 22px;
+      left: 50%;
+      margin-left: -21px;
+      position: absolute;
+      width: 42px;
+      z-index: 999;
+    }
+    .accordion:hover .title-package span {
+      border-bottom: 2px solid transparent;
+    }
+    .accordion:hover .sub-title-package,
+    .accordion:hover .title-package {
+      color: #d44513;
+    }
+  a.accordion:hover .title-package {
+      color: #444;
+    }
+
+}

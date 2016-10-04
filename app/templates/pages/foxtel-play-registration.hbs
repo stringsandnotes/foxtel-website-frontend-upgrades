@@ -1,0 +1,367 @@
+---
+title: Foxtel Play - Manage my package
+---
+
+
+<main class="main" id="" role="main" style="padding-left: 0; padding-right: 0;">
+    <div class="container-fluid header-layer"> <!-- Start Header -->
+        <div class="row">
+            <div class="img-package-combos">
+                <img alt="" src="./etc/designs/foxtel/clientlibs/img/seelct-and-customise-banner.jpg">
+            </div>
+        </div>
+        <div class="compos-block main-feature-container">
+
+        </div>
+    </div> <!-- End Header -->
+
+    <div class="container">
+
+    	<form id="entry-form" action="" method="post" enctype="multipart/form-data" class="form-horizontal foxtel-form" data-foxtel-validate="data-foxtel-validate" autocomplete="off" novalidate="">
+		<div class="row mt-30">
+			<div class="col-xs-12">
+                <h2>New Account</h2>
+                <p class="mt-10">Please enter your details to create your Foxtel Play account</p>			                
+			</div>
+		</div>
+        <div class="row mt-30">
+            <div class="col-xs-12 col-md-6">
+					<fieldset class="borderless">
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="email-address">Email address*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="email-address" autocomplete="off" name="email-address" placeholder="example@example.com.au" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your Email address" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="confirm-email-address">Confirm email address*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="confirm-email-address" autocomplete="off" name="confirm-email-address" placeholder="example@example.com.au" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please confirm your Email address" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="password">Password*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="password" class="form-ctrl" id="password" autocomplete="off" name="password" placeholder="example123" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your password" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="confirm-password">Confirm Password*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="password" class="form-ctrl" id="confirm-password" autocomplete="off" name="confirm-password" placeholder="example123" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please confirm your password" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="first-name">First name*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="first-name" autocomplete="off" name="first-name" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your first name" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="last-name">Last name*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="last-name" autocomplete="off" name="last-name" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your last name" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>		
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="mobile-phone-number">Mobile/phone number*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="mobile-phone-number" autocomplete="off" name="mobile-phone-number" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your mobile/phone number" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>	
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="billing-address">Billing address*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="billing-address" autocomplete="off" name="billing-address" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your billing address" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>	
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="dobr">Date of birth</label>
+						</div>
+						<div class="col-sm-2">
+					            <select
+					                id="dob-dd"
+					                class="form-ctrl select-1"
+					                name="dob-dd"
+					                data-foxtel-required-message="Sample required message"
+					                required="required"
+					                autofocus="autofocus"
+					                data-foxtel-error-analytics-effect="sample error analytics"
+					                value="title">
+					                    <option value="" selected>Day</option>
+					            </select>
+					    </div>
+						<div class="col-sm-3">
+					            <select
+					                id="dob-mm"
+					                class="form-ctrl select-1"
+					                name="dob-mm"
+					                data-foxtel-required-message="Sample required message"
+					                required="required"
+					                autofocus="autofocus"
+					                data-foxtel-error-analytics-effect="sample error analytics"
+					                value="title">
+					                    <option value="" selected>Month</option>
+					            </select>
+					    </div>
+						<div class="col-sm-2">
+					            <select
+					                id="dob-yy"
+					                class="form-ctrl select-1"
+					                name="dob-yy"
+					                data-foxtel-required-message="Sample required message"
+					                required="required"
+					                autofocus="autofocus"
+					                data-foxtel-error-analytics-effect="sample error analytics"
+					                value="title">
+					                    <option value="" selected>Year</option>
+					            </select>
+					    </div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="billing-address">Secret question*</label>
+						</div>
+						<div class="col-sm-7">								
+					            <select
+					                id="secret-question"
+					                class="form-ctrl select-1"
+					                name="secret-question"
+					                data-foxtel-required-message="Sample required message"
+					                required="required"
+					                autofocus="autofocus"
+					                data-foxtel-error-analytics-effect="sample error analytics"
+					                value="title">
+					                    <option value="" selected>Month</option>
+					            </select>
+						</div>
+					</div>	
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="secret-question-answer">Answer*</label>
+						</div>
+						<div class="col-sm-7">								
+							<input type="text" class="form-ctrl" id="secret-question-answer" autocomplete="off" name="billing-address" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your billing address" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="which-device">Which device will you mainly be using to watch Foxtel Play at home?*</label>
+						</div>
+						<div class="col-sm-7">								
+					            <select
+					                id="which-device"
+					                class="form-ctrl select-1"
+					                name="which-device"
+					                data-foxtel-required-message="Sample required message"
+					                required="required"
+					                autofocus="autofocus"
+					                data-foxtel-error-analytics-effect="sample error analytics"
+					                value="title">
+					                    <option value="" selected>Month</option>
+					            </select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 ctrl-label">
+							<label for="captcha">Captcha*</label>
+						</div>
+						<div class="col-sm-3">								
+							<input type="text" class="form-ctrl" id="captcha" autocomplete="off" name="captcha" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your billing address" required />
+							<ul class="parsley-errors-list" id=""></ul>
+						</div>
+						<div class="col-sm-2">								
+							<a href="#" id="" target="1" class="showTooltip"> 
+							  <span class="icon-info-bold heading heading-30 text-grey-light-b"></span> 
+							  <div id="tooltipDiv1" class="help_info targetTooltip" style="display: none;"> 
+							    <h4 class="help-info-content">Some text Some text Some text Some text</h4> 
+							  </div> 
+							</a>
+						</div>
+					</div>
+					</fieldset>
+				
+            </div>
+        	<div class="col-xs-12 col-md-6 text-left">
+        		Image container
+        	</div>
+        </div> <!-- row --> 
+        <div class="row">
+        	<div class="col-xs-12 col-sm-8">
+                <h2>Payment details</h2>
+                <p class="mt-10">Please enter your details to setup up your monthly payments</p>	
+				<div class="form-group row">
+					<div class="col-sm-3 ctrl-label">
+						<label for="cc-number">Card number*</label>
+					</div>
+					<div class="col-sm-4">								
+						<input type="text" class="form-ctrl" id="cc-number" autocomplete="off" name="cc-number" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter your credit card number" required />
+						<ul class="parsley-errors-list" id=""></ul>
+					</div>
+					<div class="col-sm-3">								
+						<img src="http://www.foxtel.com.au/foxtelplay/build/static/images/icon_card.png">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-3 ctrl-label">
+						<label for="cc-name-on-card">Name on card*</label>
+					</div>
+					<div class="col-sm-4">								
+						<input type="text" class="form-ctrl" id="cc-name-on-card" autocomplete="off" name="cc-name-on-card" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter the name on card" required />
+						<ul class="parsley-errors-list" id=""></ul>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-3 ctrl-label">
+						<label for="cc-mm">Valid to*</label>
+					</div>
+					<div class="col-sm-2">								
+				            <select
+				                id="cc-mm"
+				                class="form-ctrl select-1"
+				                name="cc-mm"
+				                data-foxtel-required-message="Sample required message"
+				                required="required"
+				                autofocus="autofocus"
+				                data-foxtel-error-analytics-effect="sample error analytics"
+				                value="title">
+				                    <option value="" selected>Month</option>
+				            </select>
+					</div>
+					<div class="col-sm-2">								
+				            <select
+				                id="cc-yy"
+				                class="form-ctrl select-1"
+				                name="cc-yy"
+				                data-foxtel-required-message="Sample required message"
+				                required="required"
+				                autofocus="autofocus"
+				                data-foxtel-error-analytics-effect="sample error analytics"
+				                value="title">
+				                    <option value="" selected>Year</option>
+				            </select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-3 ctrl-label">
+						<label for="cc-name-on-card">Verification code (CVC)*</label>
+					</div>
+					<div class="col-sm-4">								
+						<input type="text" class="form-ctrl" id="cc-name-on-card" autocomplete="off" name="cc-name-on-card" placeholder="example" data-foxtel-trigger="blur change focusout" maxlength="40" data-foxtel-required-message="Please enter the name on card" required />
+						<ul class="parsley-errors-list" id=""></ul>
+					</div>
+					<div class="col-sm-2">								
+						<a href="#" id="" target="1" class="showTooltip"> 
+						  <span class="icon-info-bold heading heading-30 text-grey-light-b"></span> 
+						  <div id="tooltipDiv1" class="help_info targetTooltip" style="display: none;"> 
+						    <h4 class="help-info-content">Some text Some text Some text Some text</h4> 
+						  </div> 
+						</a>
+					</div>
+
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-8 col-sm-offset-3">								
+						<div class="checkbox-lg mt-10">
+								<input id="tnc-confirm" name="tnc-confirm" data-foxtel-required-message="" required="" type="checkbox">
+								<label for="tnc-confirm" class="marginless pb-20 text-left">
+									<small>By clicking "Submit Changes" I agree that my credit card will be debited every month with the new amount as selected above. This change will take place immediately.</small>
+								</label>
+								<span class="checkbox-lg-ie8"></span>
+								<ul class="parsley-errors-list" id=""></ul>
+						</div>
+					</div>
+				</div>
+
+				<a href="" class="btn_ btn_primary mt-30"> 
+				  <span class="icon-arrow-left"></span> 
+				  <span>Back</span> 
+				</a>
+
+        	</div> <!-- col-sm-8-->
+
+        	<aside class="col-xs-12 col-md-4 wrapper-sidebar">
+        		<section>
+	        		<h3 class="sidebar-title-lg">
+	        			Review your order
+	        		</h3>
+	        		<div class="row">
+	        			<div class="col-xs-8 sidebar-title-md text-upp text-left text-grey">Packs</div>
+	        			<div class="col-xs-4 sidebar-title-md text-right text-grey">$25.00</div>
+	        		</div>
+	        		<div class="row">
+	        			<div class="col-xs-12">Premium Drama</div>
+	        			<div class="col-xs-12">Premium Entertainment</div>
+	        			<div class="col-xs-12">Sport</div>
+	        		</div>
+	        		<div class="row mt-20">
+	        			<div class="col-xs-8 sidebar-title-md text-upp text-left text-grey">Extras</div>
+	        			<div class="col-xs-4 sidebar-title-md text-right text-grey">$0.00</div>
+	        		</div>
+	        		<div class="row">
+	        			<div class="col-xs-12">MUTV</div>
+	        			<div class="col-xs-12">LFCTV</div>
+	        			<div class="col-xs-12">Chelsea</div>
+	        		</div>
+				</section>
+
+				<hr class="hr-divider mt-10">
+				<section class="text-center mt-30">
+					<p class="text-center text-grey mt-20">
+						First Month<br>Monthly cost
+					</p>
+					<div class="plan-price text-orange mt-5"> 
+					  <sup>$</sup> 
+					  <span>50</span> 
+					  <sup class="star">.03*</sup> 
+					</div>
+				</section>
+
+				<section class="text-center mt-30">
+					<p class="text-center text-grey mt-20">
+						Ongoing<br>Monthly cost
+					</p>
+					<div class="plan-price mt-5 heading heading-48"> 
+					  <sup>$</sup> 
+					  <span>50</span> 
+					  <sup class="star">*</sup> 
+					</div>
+				</section>
+
+				<hr class="hr-divider hr-thick-black">	
+				
+				<a href="" class="btn_ btn_orange btn_full_width "> 
+				  <span>Start your free trial</span> 
+				  <span class="icon-arrow-right"></span> 
+				</a>		
+        	</aside>
+        </div>
+        </form>
+
+    </div> <!-- container --> 
